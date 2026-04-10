@@ -1,0 +1,69 @@
+import { ArrowRight, Calendar } from "lucide-react";
+
+const GOOGLE_FORM_URL = "#register";
+
+const facts = ["FREE ENTRY", "1-DAY EVENT", "4 SPEAKERS", "50–60 ATTENDEES"];
+
+const HeroSection = () => (
+  <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    {/* Background grid pattern */}
+    <div
+      className="absolute inset-0 opacity-[0.03]"
+      style={{
+        backgroundImage:
+          "linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)",
+        backgroundSize: "60px 60px",
+      }}
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+
+    <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-secondary/50 text-sm text-muted-foreground mb-8 font-mono">
+        <Calendar size={14} className="text-primary" />
+        <span>May 16, 2025 — Chișinău, Moldova</span>
+      </div>
+
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-2">
+        <span className="text-glow">JVM Tech Talks</span>
+      </h1>
+      <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight text-primary mb-4">
+        Chișinău
+      </h2>
+      <p className="font-mono text-sm md:text-base text-muted-foreground tracking-widest uppercase mb-6">
+        // Trial Edition
+      </p>
+
+      <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+        Moldova has world-class engineers.{" "}
+        <span className="text-foreground font-medium">What it needs is a stage.</span>
+      </p>
+
+      <div className="flex flex-wrap justify-center gap-3 mb-10">
+        {facts.map((fact) => (
+          <span
+            key={fact}
+            className="px-4 py-2 rounded-md bg-secondary border border-border text-sm font-mono font-medium text-secondary-foreground"
+          >
+            {fact}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex flex-col items-center gap-3">
+        <a
+          href={GOOGLE_FORM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all animate-pulse-glow"
+        >
+          Register Now <ArrowRight size={20} />
+        </a>
+        <p className="text-xs text-muted-foreground">
+          Free of charge — open to all engineers and enthusiasts
+        </p>
+      </div>
+    </div>
+  </section>
+);
+
+export default HeroSection;
