@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-const GOOGLE_FORM_URL = "#register";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeg963FCVQ3xkO9KCMbArTbklCP5BqeX2z4uThrNzWAuedJxA/viewform?usp=publish-editor";
 
 const hashtags = [
   "#Java", "#JVM", "#ModernJava", "#Concurrency",

@@ -1,6 +1,6 @@
 import { ArrowRight, Calendar } from "lucide-react";
 
-const GOOGLE_FORM_URL = "#register";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeg963FCVQ3xkO9KCMbArTbklCP5BqeX2z4uThrNzWAuedJxA/viewform?usp=publish-editor";
 
 const facts = ["FREE ENTRY", "1-DAY EVENT", "4 SPEAKERS", "50–60 ATTENDEES"];
 
