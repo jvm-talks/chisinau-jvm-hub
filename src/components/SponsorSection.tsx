@@ -2,27 +2,39 @@ import { ExternalLink } from "lucide-react";
 
 const SponsorSection = () => (
   <section id="sponsor" className="py-24 section-fade">
-    <div className="container mx-auto px-4 max-w-3xl text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12">
+    <div className="container mx-auto px-4 max-w-4xl">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
         <span className="font-mono text-primary text-lg block mb-2">05.</span>
         Special Thanks to Our Sponsor
       </h2>
 
-      <div className="inline-block p-10 rounded-lg bg-card border border-border card-hover">
-        <div className="w-48 h-16 mx-auto mb-6 bg-secondary rounded flex items-center justify-center">
-          <span className="font-mono text-lg text-muted-foreground">Grid Dynamics</span>
+      <div className="p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col md:flex-row gap-8 items-center md:items-start">
+        {/* Logo placeholder */}
+        <div className="w-40 h-40 md:w-48 md:h-48 rounded-lg bg-secondary border border-border flex items-center justify-center shrink-0">
+          <span className="font-mono text-sm text-muted-foreground text-center px-4">
+            Logo placeholder
+          </span>
         </div>
-        <a
-          href="https://www.griddynamics.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-xl font-bold text-foreground hover:text-primary transition-colors"
-        >
-          Grid Dynamics <ExternalLink size={16} />
-        </a>
-        <p className="text-muted-foreground text-sm mt-3">
-          Proudly supporting Moldova's engineering community
-        </p>
+
+        {/* Text */}
+        <div className="flex flex-col text-center md:text-left">
+          <a
+            href="https://www.griddynamics.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-2xl font-bold text-foreground hover:text-primary transition-colors justify-center md:justify-start"
+          >
+            Grid Dynamics <ExternalLink size={18} />
+          </a>
+
+          <p className="text-sm text-muted-foreground mt-4 leading-relaxed max-w-2xl">
+            Grid Dynamics is a leading digital engineering company specialising in big data, cloud, and AI solutions for Fortune 1000 enterprises. With engineering centres across multiple countries, Grid Dynamics combines deep technical expertise with a culture of innovation — making them a natural partner for grassroots developer communities.
+          </p>
+
+          <p className="text-primary font-mono text-sm mt-4 italic">
+            Proudly supporting Moldova's engineering community
+          </p>
+        </div>
       </div>
     </div>
   </section>
