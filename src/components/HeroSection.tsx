@@ -18,8 +18,8 @@ const HeroSection = () => (
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
     <div className="relative z-10 container mx-auto px-4 text-center">
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-secondary/50 text-sm text-muted-foreground mb-8 font-mono">
-        <Calendar size={14} className="text-primary" />
+      <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/10 text-lg md:text-xl text-foreground mb-8 font-mono font-bold">
+        <Calendar size={20} className="text-primary" />
         <span>May 16, 2025 — Chișinău, Moldova</span>
       </div>
 
