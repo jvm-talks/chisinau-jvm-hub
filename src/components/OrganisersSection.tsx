@@ -1,10 +1,9 @@
-import { User } from "lucide-react";
-
 interface Organiser {
   name: string;
   telegram: string;
   telegramHandle: string;
   linkedin: string;
+  photo: string;
 }
 
 const organisers: Organiser[] = [
@@ -13,12 +12,14 @@ const organisers: Organiser[] = [
     telegram: "https://t.me/whitsby",
     telegramHandle: "@whitsby",
     linkedin: "https://linkedin.com/in/abgar-simonean",
+    photo: "/assets/organisers/abgar.png",
   },
   {
     name: "Gheorghii Mosin",
     telegram: "https://t.me/GeorgeTheBlob",
     telegramHandle: "@GeorgeTheBlob",
     linkedin: "https://linkedin.com/in/gheorghiimosin",
+    photo: "/assets/organisers/gheorghii.png",
   },
 ];
 
@@ -48,8 +49,8 @@ const OrganisersSection = () => (
             key={o.name}
             className="p-6 rounded-lg bg-card border border-border card-hover text-center"
           >
-            <div className="w-20 h-20 rounded-full bg-secondary border border-border flex items-center justify-center mx-auto mb-4">
-              <User size={32} className="text-muted-foreground" />
+            <div className="w-20 h-20 rounded-full overflow-hidden border border-border mx-auto mb-4">
+              <img src={o.photo} alt={o.name} className="w-full h-full object-cover" />
             </div>
             <h3 className="font-bold text-lg mb-1">{o.name}</h3>
             <p className="text-sm text-muted-foreground mb-4">Organiser</p>

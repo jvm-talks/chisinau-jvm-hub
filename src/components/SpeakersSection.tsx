@@ -1,11 +1,10 @@
-import { User } from "lucide-react";
-
 interface Speaker {
   name: string;
   role?: string;
   talk: string;
   bio: string;
   tags: string[];
+  photo: string;
 }
 
 const speakers: Speaker[] = [
@@ -15,6 +14,7 @@ const speakers: Speaker[] = [
     bio: "Seasoned engineer with deep expertise in building production-grade systems at scale. Specialises in Spring ecosystem and cloud-native architectures.",
     talk: "How We Built a Fraud Detection System on the Fly in 3 Days",
     tags: ["Spring Boot", "Spring AI", "PostgreSQL", "PGVector", "RAG", "Gemini LLM"],
+    photo: "/assets/speakers/igor.jpg",
   },
   {
     name: "Sergiu Roibu",
@@ -22,18 +22,21 @@ const speakers: Speaker[] = [
     bio: "Backend engineer passionate about understanding what happens beneath the abstractions. Focused on Spring internals and JVM performance.",
     talk: "Spring Boot — Under the Hood Mechanics",
     tags: ["Spring Boot", "Spring Internals"],
+    photo: "/assets/speakers/serghei.jpg",
   },
   {
     name: "Sandu Nicula",
     bio: "Java engineer with hands-on experience designing resilient, high-throughput systems. Enthusiast of caching strategies and distributed architecture patterns.",
     talk: "Cache Me If You Can: Building Resilient Java Caching Layers",
     tags: ["Caching", "Java"],
+    photo: "/assets/speakers/sandu.jpg",
   },
   {
     name: "Nicolae Nicolaev",
     bio: "JVM enthusiast focused on performance engineering and compiler optimisation. Enjoys digging into the internals of how Java actually runs.",
     talk: "Java's JIT Mechanism",
     tags: ["JIT", "JVM", "Performance"],
+    photo: "/assets/speakers/nicolae.png",
   },
 ];
 
@@ -51,8 +54,8 @@ const SpeakersSection = () => (
             key={s.name}
             className="p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
           >
-            <div className="w-28 h-28 md:w-32 md:h-32 rounded-full bg-secondary border border-border flex items-center justify-center shrink-0">
-              <User size={48} className="text-muted-foreground" />
+            <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border border-border shrink-0">
+              <img src={s.photo} alt={s.name} className="w-full h-full object-cover" />
             </div>
 
             <div className="flex flex-col text-center md:text-left">

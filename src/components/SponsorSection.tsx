@@ -9,11 +9,9 @@ const SponsorSection = () => (
       </h2>
 
       <div className="p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col md:flex-row gap-8 items-center md:items-start">
-        {/* Logo placeholder */}
-        <div className="w-40 h-40 md:w-48 md:h-48 rounded-lg bg-secondary border border-border flex items-center justify-center shrink-0">
-          <span className="font-mono text-sm text-muted-foreground text-center px-4">
-            Logo placeholder
-          </span>
+        {/* Logo */}
+        <div className="w-40 h-40 md:w-48 md:h-48 rounded-lg overflow-hidden border border-border shrink-0">
+          <img src="/assets/sponsor/logo.png" alt="Grid Dynamics" className="w-full h-full object-contain p-4" />
         </div>
 
         {/* Text */}
