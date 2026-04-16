@@ -10,7 +10,7 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     name: "Igor Dumchykov",
-    role: "Senior Staff Software Engineer",
+    role: "Senior Staff Software Engineer @Grid Dynamics",
     bio: "Seasoned engineer with deep expertise in building production-grade systems at scale. Specialises in Spring ecosystem and cloud-native architectures.",
     talk: "How We Built a Fraud Detection System on the Fly in 3 Days",
     tags: ["Spring Boot", "Spring AI", "PostgreSQL", "PGVector", "RAG", "Gemini LLM"],
@@ -18,7 +18,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Sergiu Roibu",
-    role: "Staff Software Engineer",
+    role: "Staff Software Engineer @Grid Dynamics",
     bio: "Backend engineer passionate about understanding what happens beneath the abstractions. Focused on Spring internals and JVM performance.",
     talk: "Spring Boot — Under the Hood Mechanics",
     tags: ["Spring Boot", "Spring Internals"],
@@ -26,6 +26,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Sandu Nicula",
+    role: "Senior Software Engineer @Klarna",
     bio: "Java engineer with hands-on experience designing resilient, high-throughput systems. Enthusiast of caching strategies and distributed architecture patterns.",
     talk: "Cache Me If You Can: Building Resilient Java Caching Layers",
     tags: ["Caching", "Java"],
@@ -33,6 +34,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Nicolae Nicolaev",
+    role: "Senior Java Developer @MAIB",
     bio: "JVM enthusiast focused on performance engineering and compiler optimisation. Enjoys digging into the internals of how Java actually runs.",
     talk: "Java's JIT Mechanism",
     tags: ["JIT", "JVM", "Performance"],
