@@ -8,21 +8,26 @@ const SponsorSection = () => (
         Special Thanks to Our Sponsor
       </h2>
 
-      <div className="p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col md:flex-row gap-8 items-center md:items-start">
-        {/* Logo */}
-        <div className="w-40 h-40 md:w-48 md:h-48 rounded-lg overflow-hidden border border-border shrink-0">
-          <img src="/assets/sponsor/logo.png" alt="Grid Dynamics" className="w-full h-full object-contain p-4" />
-        </div>
-
-        {/* Text */}
-        <div className="flex flex-col text-center md:text-left">
+      <div className="p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <a
             href="https://www.griddynamics.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-2xl font-bold text-foreground hover:text-primary transition-colors justify-center md:justify-start"
+            aria-label="Visit Grid Dynamics"
+            className="group w-full max-w-2xl"
           >
-            Grid Dynamics <ExternalLink size={18} />
+            <div className="flex items-center justify-center gap-2 md:justify-start">
+              <img
+                src="/assets/sponsor/GD_logo_white_SVG.svg"
+                alt="Grid Dynamics"
+                className="w-full max-w-2xl h-auto"
+              />
+              <ExternalLink
+                size={18}
+                className="shrink-0 text-foreground transition-colors group-hover:text-primary"
+              />
+            </div>
           </a>
 
           <p className="text-sm text-muted-foreground mt-4 leading-relaxed max-w-2xl">
