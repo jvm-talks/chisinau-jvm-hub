@@ -35,7 +35,7 @@ const VenueSection = () => (
                 <Clock size={16} className="shrink-0 text-primary" />
                 <span>
                   Doors open at{" "}
-                  <strong className="text-foreground">9:00 AM</strong>
+                  <strong className="text-foreground">11:00 AM</strong>
                 </span>
               </div>
             </div>
