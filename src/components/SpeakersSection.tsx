@@ -5,6 +5,7 @@ interface Speaker {
   bio: string;
   tags: string[];
   photo: string;
+  companyLogo?: string;
 }
 
 const speakers: Speaker[] = [
@@ -15,6 +16,7 @@ const speakers: Speaker[] = [
     talk: "How We Built a Fraud Detection System on the Fly in 3 Days",
     tags: ["Spring Boot", "Spring AI", "PostgreSQL", "PGVector", "RAG", "Gemini LLM"],
     photo: "/assets/speakers/igor.jpg",
+    companyLogo: "/assets/sponsor/GD_logo_white_SVG.svg",
   },
   {
     name: "Sergiu Roibu",
@@ -23,6 +25,7 @@ const speakers: Speaker[] = [
     talk: "Spring Boot — Under the Hood Mechanics",
     tags: ["Spring Boot", "Spring Internals"],
     photo: "/assets/speakers/serghei.jpg",
+    companyLogo: "/assets/sponsor/GD_logo_white_SVG.svg",
   },
   {
     name: "Sandu Nicula",
@@ -31,6 +34,7 @@ const speakers: Speaker[] = [
     talk: "Cache Me If You Can: Building Resilient Java Caching Layers",
     tags: ["Caching", "Java"],
     photo: "/assets/speakers/sandu.jpg",
+    companyLogo: "/assets/companies/klarna.jpeg",
   },
   {
     name: "Nicolae Nicolaev",
@@ -39,6 +43,7 @@ const speakers: Speaker[] = [
     talk: "Java's JIT Mechanism",
     tags: ["JIT", "JVM", "Performance"],
     photo: "/assets/speakers/nicolae.png",
+    companyLogo: "/assets/companies/maib.png",
   },
 ];
 
@@ -54,8 +59,15 @@ const SpeakersSection = () => (
         {speakers.map((s) => (
           <div
             key={s.name}
-            className="p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
+            className="relative p-6 md:p-8 rounded-lg bg-card border border-border card-hover flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start"
           >
+            {s.companyLogo && (
+              <img
+                src={s.companyLogo}
+                alt="Company logo"
+                className="absolute top-4 right-4 h-8 w-auto object-contain opacity-70"
+              />
+            )}
             <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border border-border shrink-0">
               <img src={s.photo} alt={s.name} className="w-full h-full object-cover" />
             </div>

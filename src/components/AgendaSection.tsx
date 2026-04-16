@@ -5,22 +5,23 @@ interface AgendaItem {
 }
 
 const agenda: AgendaItem[] = [
-  { time: "09:00", title: "Doors Open & Registration" },
-  { time: "09:30", title: "Opening Remarks — Abgar Simonean & Gheorghii Mosin" },
+  { time: "11:00", title: "Doors Open & Registration" },
+  { time: "11:30", title: "Opening Remarks — Abgar Simonean & Gheorghii Mosin" },
+  { time: "11:45", title: "Word from Our Sponsor — Grid Dynamics" },
   {
-    time: "09:45",
+    time: "11:50",
     title: "Igor Dumchykov — How We Built a Fraud Detection System on the Fly in 3 Days",
   },
-  { time: "10:30", title: "Coffee Break ☕️", isBreak: true },
-  { time: "10:45", title: "Sergiu Roibu — Spring Boot — Under the Hood Mechanics" },
-  { time: "11:30", title: "Coffee Break ☕️", isBreak: true },
+  { time: "12:35", title: "Coffee Break ☕️", isBreak: true },
+  { time: "12:50", title: "Sergiu Roibu — Spring Boot — Under the Hood Mechanics" },
+  { time: "13:35", title: "Coffee Break ☕️", isBreak: true },
   {
-    time: "11:45",
+    time: "13:50",
     title: "Sandu Nicula — Cache Me If You Can: Building Resilient Java Caching Layers",
   },
-  { time: "12:30", title: "Lunch Break 🍕", isBreak: true },
-  { time: "13:30", title: "Nicolae Nicolaev — Java's JIT Mechanism" },
-  { time: "14:15", title: "Closing Remarks & Networking 🤝" },
+  { time: "14:35", title: "Lunch Break 🍕", isBreak: true },
+  { time: "15:35", title: "Nicolae Nicolaev — Java's JIT Mechanism" },
+  { time: "16:20", title: "Closing Remarks & Networking 🤝" },
 ];
 
 const AgendaSection = () => (
