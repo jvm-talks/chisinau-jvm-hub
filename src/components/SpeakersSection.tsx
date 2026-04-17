@@ -34,7 +34,7 @@ const speakers: Speaker[] = [
     talk: "Cache Me If You Can: Building Resilient Java Caching Layers",
     tags: ["Caching", "Java"],
     photo: "/assets/speakers/sandu.jpg",
-    companyLogo: "/assets/companies/klarna.jpeg",
+    companyLogo: "/assets/companies/yopeso.svg",
   },
   {
     name: "Nicolae Nicolaev",
