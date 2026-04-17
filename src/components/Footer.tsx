@@ -31,7 +31,7 @@ const Footer = () => (
         Part of the initiative to establish GDG Chișinău
       </p>
       <p className="text-xs text-muted-foreground">
-        © 2025 JVM Tech Talks Chișinău
+        © 2026 JVM Tech Talks Chișinău
       </p>
     </div>
   </footer>

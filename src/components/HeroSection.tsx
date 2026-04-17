@@ -20,7 +20,7 @@ const HeroSection = () => (
     <div className="relative z-10 container mx-auto px-4 text-center">
       <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/10 text-lg md:text-xl text-foreground mb-8 font-mono font-bold">
         <Calendar size={20} className="text-primary" />
-        <span>May 16, 2025 — Chișinău, Moldova</span>
+        <span>May 16, 2026 — Chișinău, Moldova</span>
       </div>
 
       <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-2">
