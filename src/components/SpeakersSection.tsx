@@ -29,12 +29,12 @@ const speakers: Speaker[] = [
   },
   {
     name: "Sandu Nicula",
-    role: "Senior Software Engineer @Klarna",
+    role: "Senior Software Engineer @Yopeso",
     bio: "Java engineer with hands-on experience designing resilient, high-throughput systems. Enthusiast of caching strategies and distributed architecture patterns.",
     talk: "Cache Me If You Can: Building Resilient Java Caching Layers",
     tags: ["Caching", "Java"],
     photo: "/assets/speakers/sandu.jpg",
-    companyLogo: "/assets/companies/yopeso.svg",
+    companyLogo: "/assets/companies/yopeso.jpg",
   },
   {
     name: "Nicolae Nicolaev",
