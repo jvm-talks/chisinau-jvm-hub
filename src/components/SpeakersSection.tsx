@@ -13,7 +13,7 @@ const speakers: Speaker[] = [
     name: "Igor Dumchykov",
     role: "Senior Staff Software Engineer @Grid Dynamics",
     bio: "Seasoned engineer with deep expertise in building production-grade systems at scale. Specialises in Spring ecosystem and cloud-native architectures.",
-    talk: "How We Built a Fraud Detection System on the Fly in 3 Days",
+    talk: "How We Built a Fraud Detection System in 3 Days",
     tags: ["Spring Boot", "Spring AI", "PostgreSQL", "PGVector", "RAG", "Gemini LLM"],
     photo: "/assets/speakers/igor.jpg",
     companyLogo: "/assets/sponsor/GD_logo_white_SVG.svg",
