@@ -10,7 +10,7 @@ const agenda: AgendaItem[] = [
   { time: "11:45", title: "Word from Our Sponsor — Grid Dynamics" },
   {
     time: "11:50",
-    title: "Igor Dumchykov — How We Built a Fraud Detection System on the Fly in 3 Days",
+    title: "Igor Dumchykov — How We Built a Fraud Detection System in 3 Days",
   },
   { time: "12:35", title: "Coffee Break ☕️", isBreak: true },
   { time: "12:50", title: "Sergiu Roibu — Spring Boot — Under the Hood Mechanics" },
