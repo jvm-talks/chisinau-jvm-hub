@@ -13,7 +13,7 @@ const agenda: AgendaItem[] = [
     title: "Igor Dumchykov — How We Built a Fraud Detection System in 3 Days",
   },
   { time: "12:35", title: "Coffee Break ☕️", isBreak: true },
-  { time: "12:50", title: "Sergiu Roibu — Spring Boot — Under the Hood Mechanics" },
+  { time: "12:50", title: "Sergiu Roibu — Spring Boot - What Happens in Those 2 Seconds?" },
   { time: "13:35", title: "Coffee Break ☕️", isBreak: true },
   {
     time: "13:50",

@@ -22,7 +22,7 @@ const speakers: Speaker[] = [
     name: "Sergiu Roibu",
     role: "Staff Software Engineer @Grid Dynamics",
     bio: "Backend engineer passionate about understanding what happens beneath the abstractions. Focused on Spring internals and JVM performance.",
-    talk: "Spring Boot — Under the Hood Mechanics",
+    talk: "Spring Boot - What Happens in Those 2 Seconds?",
     tags: ["Spring Boot", "Spring Internals"],
     photo: "/assets/speakers/serghei.jpg",
     companyLogo: "/assets/sponsor/GD_logo_white_SVG.svg",
