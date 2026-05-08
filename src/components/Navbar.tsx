@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeg963FCVQ3xkO9KCMbArTbklCP5BqeX2z4uThrNzWAuedJxA/viewform?usp=publish-editor";
-
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Venue", href: "#venue" },
@@ -44,14 +42,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a
-            href={GOOGLE_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 text-sm font-semibold rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+          <span
+            aria-disabled="true"
+            className="px-4 py-2 text-sm font-semibold rounded-md bg-muted text-muted-foreground border border-border cursor-not-allowed"
           >
-            Register
-          </a>
+            Registration Closed
+          </span>
         </div>
 
         {/* Mobile toggle */}
@@ -77,14 +73,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a
-            href={GOOGLE_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 block text-center px-4 py-2 text-sm font-semibold rounded-md bg-primary text-primary-foreground"
+          <span
+            aria-disabled="true"
+            className="mt-2 block text-center px-4 py-2 text-sm font-semibold rounded-md bg-muted text-muted-foreground border border-border cursor-not-allowed"
           >
-            Register
-          </a>
+            Registration Closed
+          </span>
         </div>
       )}
     </nav>

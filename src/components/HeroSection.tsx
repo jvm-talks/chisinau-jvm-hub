@@ -1,6 +1,4 @@
-import { ArrowRight, Calendar } from "lucide-react";
-
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeg963FCVQ3xkO9KCMbArTbklCP5BqeX2z4uThrNzWAuedJxA/viewform?usp=publish-editor";
+import { Calendar } from "lucide-react";
 
 const facts = ["FREE ENTRY", "1-DAY EVENT", "4 SPEAKERS", "50–60 ATTENDEES"];
 
@@ -50,14 +48,12 @@ const HeroSection = () => (
       </div>
 
       <div className="flex flex-col items-center gap-3">
-        <a
-          href={GOOGLE_FORM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all animate-pulse-glow"
+        <span
+          aria-disabled="true"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-muted text-muted-foreground font-bold text-lg cursor-not-allowed border border-border"
         >
-          Register Now <ArrowRight size={20} />
-        </a>
+          Registration Closed
+        </span>
         <p className="text-xs text-muted-foreground">
           Free of charge — open to all engineers and enthusiasts
         </p>
