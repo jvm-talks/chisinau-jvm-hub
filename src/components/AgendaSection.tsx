@@ -12,16 +12,17 @@ const agenda: AgendaItem[] = [
     time: "11:50",
     title: "Igor Dumchykov — How We Built a Fraud Detection System in 3 Days",
   },
-  { time: "12:35", title: "Coffee Break ☕️", isBreak: true },
-  { time: "12:50", title: "Sergiu Roibu — Spring Boot - What Happens in Those 2 Seconds?" },
-  { time: "13:35", title: "Coffee Break ☕️", isBreak: true },
   {
-    time: "13:50",
+    time: "12:35",
+    title: "Sergiu Roibu — Spring Boot - What Happens in Those 2 Seconds?",
+  },
+  { time: "13:20", title: "Coffee Break ☕️", isBreak: true },
+  {
+    time: "13:40",
     title: "Sandu Nicula — Cache Me If You Can: Building Resilient Java Caching Layers",
   },
-  { time: "14:35", title: "Lunch Break 🍕", isBreak: true },
-  { time: "15:35", title: "Nicolae Nicolaev — Java's JIT Mechanism" },
-  { time: "16:20", title: "Closing Remarks & Networking 🤝" },
+  { time: "14:25", title: "Nicolae Nicolaev — Java’s JIT Mechanism" },
+  { time: "15:00", title: "Closing Remarks, Lunch & Networking 🤝🍕", isBreak: true },
 ];
 
 const AgendaSection = () => (
